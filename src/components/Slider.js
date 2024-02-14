@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import React, { useEffect } from 'react'; // Import React
+
 
 const Slider = () => {
 
@@ -65,11 +66,11 @@ init();
           <div className="carousel-inner" role="listbox">
 
 
-            <div className="carousel-item active" style={{ backgroundImage: "url(../images/slide-1.jpg)" }}>
+            <div className="carousel-item active" style={{ backgroundImage: "url(/img/alper.jpeg)" }}>
               <div className="carousel-container">
                 <div className="container">
                   <h2 className="animate__animated animate__fadeInDown">Unlock Your Potential</h2>
-                  <p className="animate__animated animate__fadeInUp">Reliable address for development.</p>
+                  <p className="animate__animated animate__fadeInUp">Hello and welcome! We, as the Digitson team, are here to accompany you on the exciting journey of the technology world.</p>
                   <a href="#portfolio" className="btn-get-started animate__animated animate__fadeInUp scrollto">Projects</a>
                 </div>
               </div>
@@ -79,9 +80,9 @@ init();
             <div className="carousel-item" style={{ backgroundImage: "url(../images/slide-2.jpg)" }}>
               <div className="carousel-container">
                 <div className="container">
-                  <h2 className="animate__animated animate__fadeInDown">Mobilya  İmalat ve Montaj </h2>
-                  <p className="animate__animated animate__fadeInUp">Mutfak Dolabı, Banyo Dolabı, Vestiyer ve daha pek çok mobilya işleriniz için en iyi adres.</p>
-                  <a href="#about" className="btn-get-started animate__animated animate__fadeInUp scrollto">Daha Fazla</a>
+                  <h2 className="animate__animated animate__fadeInDown">Our services</h2>
+                  <p className="animate__animated animate__fadeInUp">Reliable address for development.</p>
+                  <a href="#services" className="btn-get-started animate__animated animate__fadeInUp scrollto">Services</a>
                 </div>
               </div>
             </div>
@@ -90,9 +91,9 @@ init();
             <div className="carousel-item" style={{ backgroundImage: "url(../images/slide-3.jpg)" }}>
               <div className="carousel-container">
                 <div className="container">
-                  <h2 className="animate__animated animate__fadeInDown">Ankara Siteler de Mesleğinde Başarılı Ustalar</h2>
+                  <h2 className="animate__animated animate__fadeInDown">Contact Us</h2>
                   <p className="animate__animated animate__fadeInUp">Uzun yıllardır bu mesleği en iyi şekilde icra eden ekibimiz en kaliteli ürünleri hızlı bir şekilde hazırlamaktayız.</p>
-                  <a href="#about" className="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                  <a href="#contact" className="btn-get-started animate__animated animate__fadeInUp scrollto">Contact</a>
                 </div>
               </div>
             </div>

@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react'; // Import React
+
 function Contact() {
     return(
         <div className="Contact">
@@ -6,7 +8,7 @@ function Contact() {
 
         <div className="section-title">
           <h2>Contact Us</h2>
-          <p>İşinde profesyonel ekibimiz ile mobilya imalat montaj yapmaktayız. Hizmetlerimizin listesi yukarıda mevcuttur. Fiyat almak için Telefon ya da mail yolu ile iletişime geçebilirsiniz. Talepleriniz için arayarak bilgi alabilirsiniz.</p>
+          <p>Have a question or inquiry? Don't hesitate to get in touch with us! Our team is here to assist you. Whether you're interested in our services, have feedback, or simply want to say hello, we'd love to hear from you. Feel free to reach out through the contact form below or via the contact information provided. We look forward to connecting with you!</p>
         </div>
 
         <div className="row">
@@ -15,22 +17,15 @@ function Contact() {
             <div className="info">
               <div className="address">
                 <i className="bi bi-geo-alt"></i>
-                <h4>Lokasyon:</h4>
-                <p>Ankara - Siteler</p>
+                <h4>Location</h4>
+                <p>Turkey - Ankara</p>
               </div>
               
               <div className="email">
                 <i className="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
+                <h4>Email</h4>
+                <p>info@digitson.com.tr</p>
               </div>
-
-              <div className="phone">
-                <i className="bi bi-phone"></i>
-                <h4>Telefon:</h4>
-                <p>+905073752401</p>
-              </div>
-
               {/* <iframe src="https://www.google.com/maps/embed?ViTdfuzPXmeZc4D3A" frameborder="0" style={{border:"0", width: "100%", height: "290px"}} allowfullscreen></iframe> */}
             </div>
 
