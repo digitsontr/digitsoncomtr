@@ -1,7 +1,13 @@
-import React, { useEffect } from 'react'; // Import React
+import React, { useEffect, useState } from 'react'; // Import React
 
+import { useTranslation } from 'react-i18next';
+import BootstrapSwitchButton from 'bootstrap-switch-button-react'
+import { getAllByLabelText, getByLabelText } from '@testing-library/react';
 
-function Header() {
+function Header({ clickHandle }) {
+
+  const { t, i18n } = useTranslation();
+  const [defaultLang, setDefaultLang] = useState();
 
   useEffect(() => {
     const select = (el, all = false) => {
@@ -12,7 +18,7 @@ function Header() {
         return document.querySelector(el)
       }
     }
-  
+
     /**
      * Easy event listener function
      */
@@ -26,14 +32,14 @@ function Header() {
         }
       }
     }
-  
+
     /**
      * Easy on scroll event listener 
      */
     const onscroll = (el, listener) => {
       el.addEventListener('scroll', listener)
     }
-  
+
     /**
      * Navbar links active state on scroll
      */
@@ -54,25 +60,25 @@ function Header() {
     }
     window.addEventListener('load', navbarlinksActive)
     onscroll(document, navbarlinksActive)
-  
+
     /**
      * Scrolls to an element with header offset
      */
     const scrollto = (el) => {
       let header = select('#header')
       let offset = header.offsetHeight
-  
+
       if (!header.classList.contains('header-scrolled')) {
         offset -= 16
       }
-  
+
       let elementPos = select(el).offsetTop
       window.scrollTo({
         top: elementPos - offset,
         behavior: 'smooth'
       })
     }
-  
+
     /**
      * Header fixed top on scroll
      */
@@ -96,7 +102,7 @@ function Header() {
       window.addEventListener('load', headerFixed)
       onscroll(document, headerFixed)
     }
-  
+
     /**
      * Back to top button
      */
@@ -112,24 +118,24 @@ function Header() {
       window.addEventListener('load', toggleBacktotop)
       onscroll(document, toggleBacktotop)
     }
-  
+
     /**
      * Mobile nav toggle
      */
-    on('click', '.mobile-nav-toggle', function(e) {
+    on('click', '.mobile-nav-toggle', function (e) {
       select('#navbar').classList.toggle('navbar-mobile')
       this.classList.toggle('bi-list')
       this.classList.toggle('bi-x')
     })
-  
-  
+
+
     /**
      * Scrool with ofset on links with a class name .scrollto
      */
-    on('click', '.scrollto', function(e) {
+    on('click', '.scrollto', function (e) {
       if (select(this.hash)) {
         e.preventDefault()
-  
+
         let navbar = select('#navbar')
         if (navbar.classList.contains('navbar-mobile')) {
           navbar.classList.remove('navbar-mobile')
@@ -140,7 +146,7 @@ function Header() {
         scrollto(this.hash)
       }
     }, true)
-  
+
     /**
      * Scroll with ofset on page load with hash links in the url
      */
@@ -151,49 +157,56 @@ function Header() {
         }
       }
     });
-    
+
   });
-  
-    return(
-        <div className="Header">
-  <section id="topbar" className="d-flex align-items-center">
-    <div className="container d-flex justify-content-center justify-content-md-between">
-      <div className="contact-info d-flex align-items-center">
-        <i className="bi bi-envelope-fill"></i><a href="mailto:info@digitson.com.tr">info@digitson.com.tr</a>
-      </div>
-      {/* <div className="social-links d-none d-md-block">
+
+  return (
+    <div className="Header">
+      <section id="topbar" className="d-flex align-items-center">
+        <div className="container d-flex justify-content-center justify-content-md-between">
+          <div className="contact-info d-flex align-items-center">
+            <i className="bi bi-envelope-fill"></i><a href="mailto:info@digitson.com.tr">info@digitson.com.tr</a>
+          </div>
+          {/* <div className="social-links d-none d-md-block">
         <a href="#" className="twitter"><i className="bi bi-twitter"></i></a>
         <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
         <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
         <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
       </div> */}
-    </div>
-  </section>
-
-  <header id="header" className="d-flex align-items-center">
-    <div className="container d-flex align-items-center">
-
-      <a className="navbar-logo me-auto" href="index.html">
-        <img className="logo" src="assets/img/digitsonLogo.png"></img>
-      </a>
-
-     <a href="index.html" className="logo me-auto"><img src="assets/img/logo.png" alt="" className="img-fluid"/></a>
-
-      <nav id="navbar" className="navbar">
-        <ul>
-          <li><a className="nav-link scrollto active" href="#hero">Main Page</a></li>
-          <li><a className="nav-link scrollto" href="#about">About</a></li>
-          <li><a className="nav-link scrollto" href="#services">Services</a></li>
-          <li><a className="nav-link scrollto " href="#portfolio">Projects</a></li>
-          <li><a className="nav-link scrollto" href="#contact">Contact Us</a></li>
-        </ul>
-        <i className="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-    </div>
-  </header>
         </div>
-    )
-    
+
+        <div style={{ marginRight: "5vh" }}>
+          <BootstrapSwitchButton  onlabel='English' offlabel='Türkçe' checked={true} width={100} onstyle="secondary"
+            onChange={(checked: boolean) => {
+              clickHandle(checked);
+          }} />
+        </div>
+      </section>
+
+      <header id="header" className="d-flex align-items-center">
+        <div className="container d-flex align-items-center">
+
+          <a className="navbar-logo me-auto" href="index.html">
+            <img className="logo" src="assets/img/digitsonLogo.png"></img>
+          </a>
+
+          <a href="index.html" className="logo me-auto"><img src="assets/img/logo.png" alt="" className="img-fluid" /></a>
+
+          <nav id="navbar" className="navbar">
+            <ul>
+              <li><a className="nav-link scrollto active" href="#hero">{t("Main Page")}</a></li>
+              <li><a className="nav-link scrollto" href="#about">{t("About Us")}</a></li>
+              <li><a className="nav-link scrollto" href="#services">{t("Services")}</a></li>
+              <li><a className="nav-link scrollto " href="#portfolio">{t("Projects")}</a></li>
+              <li><a className="nav-link scrollto" href="#contact">{t("Contact Us")}</a></li>
+            </ul>
+            <i className="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+
+        </div>
+      </header>
+    </div>
+  )
+
 }
 export default Header

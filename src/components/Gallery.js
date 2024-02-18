@@ -5,10 +5,11 @@ import memorengJpeg2 from '../images/memoreng2.jpeg'
 import roommateJpeg from '../images/roommate.jpeg'
 import roommateJpeg2 from '../images/roommate2.jpeg'
 import roommateJpeg3 from '../images/roommate3.jpeg'
-
+import { useTranslation } from 'react-i18next';
 
 
 function Gallery() {
+  const { t, i18n } = useTranslation();
 
     return(
         <div className="Gallery">
@@ -16,14 +17,14 @@ function Gallery() {
       <div className="container">
 
         <div className="section-title">
-          <h2>Projects</h2>
-          <p>At our business, we boast an extensive portfolio of projects catering to clients from various sectors. Each project is meticulously planned and executed, designed to meet our clients' needs and exceed their expectations. Our solutions are backed by innovative approaches, reliable technologies, and comprehensive expertise. With a customer-centric approach and a commitment to quality service, we aim to achieve success in every project we undertake.</p>
+          <h2>{t("Projects")}</h2>
+          <p>{t("At our business, we boast an extensive portfolio of projects catering to clients from various sectors. Each project is meticulously planned and executed, designed to meet our clients' needs and exceed their expectations. Our solutions are backed by innovative approaches, reliable technologies, and comprehensive expertise. With a customer-centric approach and a commitment to quality service, we aim to achieve success in every project we undertake.")}</p>
         </div>
 
         <div className="row">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" className="filter-active">All</li>
+              <li data-filter="*" className="filter-active">{t("All")}</li>
               <li data-filter=".filter-app">ROOMIEROSTER</li>
               <li data-filter=".filter-card">MEDIAR</li>
               <li data-filter=".filter-web">MEMORENG</li>
@@ -93,8 +94,8 @@ function Gallery() {
             <div className="portfolio-wrap">
             <img src={memorengJpeg2} style={{height: "450px", width: "450px"}} />
               <div className="portfolio-info">
-                <h4>Mutfak Dolabı</h4>
-                <p>Mutfak Dolabı</p>
+                <h4>Memoreng</h4>
+                <p>Memoreng</p>
                 <div className="portfolio-links">
                   <a href="assets/img/portfolio/mutfak-dolabi-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Mutfak Dolabı"><i className="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>

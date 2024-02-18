@@ -1,4 +1,7 @@
 import React, { useEffect } from 'react'; // Import React
+//import { useTranslation } from 'react-i18next';
+
+//const { t, i18n } = useTranslation();
 
 
 const Slider = () => {

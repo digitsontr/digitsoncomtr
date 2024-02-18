@@ -1,14 +1,18 @@
-import React, { useEffect } from 'react'; // Import React
+import React from 'react'; // Import React
+import { useTranslation } from 'react-i18next';
+
 
 function Contact() {
+  const { t, i18n } = useTranslation();
+
     return(
         <div className="Contact">
                 <section id="contact" className="contact">
       <div className="container">
 
         <div className="section-title">
-          <h2>Contact Us</h2>
-          <p>Have a question or inquiry? Don't hesitate to get in touch with us! Our team is here to assist you. Whether you're interested in our services, have feedback, or simply want to say hello, we'd love to hear from you. Feel free to reach out through the contact form below or via the contact information provided. We look forward to connecting with you!</p>
+          <h2>{t("Contact Us")}</h2>
+          <p>{t("Have a question or inquiry? Don't hesitate to get in touch with us! Our team is here to assist you. Whether you're interested in our services, have feedback, or simply want to say hello, we'd love to hear from you. Feel free to reach out through below via the contact information provided. We look forward to connecting with you!")}</p>
         </div>
 
         <div className="row">
@@ -17,8 +21,8 @@ function Contact() {
             <div className="info">
               <div className="address">
                 <i className="bi bi-geo-alt"></i>
-                <h4>Location</h4>
-                <p>Turkey - Ankara</p>
+                <h4>{t("Location")}</h4>
+                <p>{t("Turkey - Ankara")}</p>
               </div>
               
               <div className="email">

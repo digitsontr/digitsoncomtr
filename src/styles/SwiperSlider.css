@@ -1,0 +1,18 @@
+/* Swiper bileşeninin boyutları */
+.swiper {
+  width: 1400px;
+  height: 1500px; /* Viewport yüksekliğinin %45'i kadar */
+}
+
+/* Swiper slaytlarının arka plan görünümü */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+/* Swiper slaytlarındaki img elementleri */
+.swiper-slide img {
+  display: block;
+  width: 100%; /* Resimlerin genişliği %100 */
+  height: auto; /* Resimlerin boyutları oranlarını koruyacak şekilde otomatik olarak ayarlanır */
+}
