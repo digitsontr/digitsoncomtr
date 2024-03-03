@@ -1,7 +1,7 @@
 /* Swiper bileşeninin boyutları */
 .swiper {
-  width: 1400px;
-  height: 1500px; /* Viewport yüksekliğinin %45'i kadar */
+  width:1400px ;
+  height:1000px; /* Viewport yüksekliğinin %45'i kadar */
 }
 
 /* Swiper slaytlarının arka plan görünümü */

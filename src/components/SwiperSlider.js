@@ -30,7 +30,7 @@ export default function SwiperSlider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://m.media-amazon.com/images/I/617GrzNYlgL._AC_UF1000,1000_QL80_.jpg" />
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
 
         </SwiperSlide>
 
