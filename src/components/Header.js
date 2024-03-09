@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'; // Import React
 
 import { useTranslation } from 'react-i18next';
 import BootstrapSwitchButton from 'bootstrap-switch-button-react'
-import { getAllByLabelText, getByLabelText } from '@testing-library/react';
 
 function Header({ clickHandle }) {
 
@@ -177,7 +176,7 @@ function Header({ clickHandle }) {
 
         <div style={{ marginRight: "5vh" }}>
           <BootstrapSwitchButton  onlabel='English' offlabel='Türkçe' checked={true} width={100} onstyle="secondary"
-            onChange={(checked: boolean) => {
+            onChange={(checked) => {
               clickHandle(checked);
           }} />
         </div>

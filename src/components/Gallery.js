@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'; // Import React
+import React from 'react'; // Import React
 import mediarJpeg from '../images/mediar.jpeg'
 import memorenJpeg from '../images/memoreng.jpeg'
 import memorengJpeg2 from '../images/memoreng2.jpeg'
