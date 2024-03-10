@@ -7,6 +7,7 @@ import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SwiperSlider from './components/SwiperSlider';
+import Landing from './components/Landing';
 
 import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <Header clickHandle={clickHandle}/>
-      <SwiperSlider />
+      <Landing/>
       <About />
       <Works />
       <Gallery />

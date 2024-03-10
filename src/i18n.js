@@ -29,6 +29,7 @@ const resources = {
         "Have a question or inquiry? Don't hesitate to get in touch with us! Our team is here to assist you. Whether you're interested in our services, have feedback, or simply want to say hello, we'd love to hear from you. Feel free to reach out through below via the contact information provided. We look forward to connecting with you!" : "Bir sorunuz veya sorunuz mu var? Bizimle iletişime geçmekten çekinmeyin! Ekibimiz size yardımcı olmak için burada. Hizmetlerimizle ilgileniyorsanız, geri bildirimde bulunuyorsanız veya sadece merhaba demek istiyorsanız, sizden haber almaktan memnuniyet duyarız. Aşağıda verilen iletişim bilgileri aracılığıyla bize ulaşmaktan çekinmeyin. Sizinle bağlantı kurmayı sabırsızlıkla bekliyoruz!",
         "Location" : "Lokasyon",
         "Turkey - Ankara" : "Turkiye - Ankara",
+        "Welcome to Digitson" : "Digitson'a Hoşgeldiniz"
         
 
 
@@ -65,6 +66,7 @@ const resources = {
         "Have a question or inquiry? Don't hesitate to get in touch with us! Our team is here to assist you. Whether you're interested in our services, have feedback, or simply want to say hello, we'd love to hear from you. Feel free to reach out through below via the contact information provided. We look forward to connecting with you!" : "Have a question or inquiry? Don't hesitate to get in touch with us! Our team is here to assist you. Whether you're interested in our services, have feedback, or simply want to say hello, we'd love to hear from you. Feel free to reach out through below via the contact information provided. We look forward to connecting with you!",
         "Location" : "Location",
         "Turkey - Ankara" : "Turkey - Ankara",
+        "Welcome to Digitson" : "Welcome to Digitson",
         
 
 

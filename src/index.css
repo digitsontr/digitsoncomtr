@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*landing styles -START-*/
+.landing-container{
+  margin-top: 8rem;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.landing-image{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 640px;
+}
+
+.landing-title{
+  z-index: 10;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255,255,255,0.5);
+  font-weight: bold;
+  font-size: 2.5rem; 
+}
+/*landing styles -END-*/
+
+/*media queries for landing title -START- */
+@media screen and (min-width: 1024px) {
+  .landing-title{
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .landing-title{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .landing-title{
+    font-size: 1.5rem;
+  }
+}
+/*media queries for landing title -START- */
+
