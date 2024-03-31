@@ -175,10 +175,10 @@ function Header({ clickHandle }) {
         </div>
 
         <div style={{ marginRight: "5vh" }}>
-          <BootstrapSwitchButton  onlabel='English' offlabel='Türkçe' checked={true} width={100} onstyle="secondary"
+          <BootstrapSwitchButton onlabel='English' offlabel='Türkçe' checked={true} width={100} onstyle="secondary"
             onChange={(checked) => {
               clickHandle(checked);
-          }} />
+            }} />
         </div>
       </section>
 
