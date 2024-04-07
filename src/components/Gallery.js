@@ -41,7 +41,6 @@ function Gallery() {
                   <h4>RoomieRoster</h4>
                   <p>RoomieRoster</p>
                   <div className="portfolio-links">
-                    <a href="" data-gallery="portfolioGallery" className="portfolio-lightbox" title=""><i className="bx bx-plus"></i></a>
                     {/* Burada href içerisinde verdiğimiz resim projects kısmında resimlerin üzerindeki + işaretine bastığımızda açılıyor */}
                     <a href="https://www.roomieroster.com"  title="Go to Website"><i className="bx bx-link"></i></a>
                     {/* Burada da more details sayfasına yönlendiriyor uygulamaların kendi sayfalarına yönlendirilecek*/}
@@ -57,7 +56,6 @@ function Gallery() {
                   <h4>Memoreng</h4>
                   <p>Memoreng</p>
                   <div className="portfolio-links">
-                    <a href="" data-gallery="portfolioGallery" className="portfolio-lightbox" title=""><i className="bx bx-plus"></i></a>
                     <a href="" title="Go to Website"><i className="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -71,7 +69,6 @@ function Gallery() {
                   <h4>RoomieRoster</h4>
                   <p>RoomieRoster</p>
                   <div className="portfolio-links">
-                    <a href="" data-gallery="portfolioGallery" className="portfolio-lightbox" title=""><i className="bx bx-plus"></i></a>
                     <a href="" title="Go to Website"><i className="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -82,10 +79,9 @@ function Gallery() {
               <div className="portfolio-wrap">
                 <img src={mediarJpeg} style={{ height: "450px", width: "450px" }} />
                 <div className="portfolio-info">
-                  <h4>Mediar</h4>
-                  <p>Mediar</p>
+                  <h4>Mediatlon</h4>
+                  <p>Mediatlon</p>
                   <div className="portfolio-links">
-                    <a href="" data-gallery="portfolioGallery" className="portfolio-lightbox" title=""><i className="bx bx-plus"></i></a>
                     <a href="" title="Go to Website"><i className="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -99,7 +95,6 @@ function Gallery() {
                   <h4>Memoreng</h4>
                   <p>Memoreng</p>
                   <div className="portfolio-links">
-                    <a href="" data-gallery="portfolioGallery" className="portfolio-lightbox" title=""><i className="bx bx-plus"></i></a>
                     <a href="" title="Go to Website"><i className="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -113,7 +108,6 @@ function Gallery() {
                   <h4>RoomieRoster</h4>
                   <p>RoomieRoster</p>
                   <div className="portfolio-links">
-                    <a href="" data-gallery="portfolioGallery" className="portfolio-lightbox" title=""><i className="bx bx-plus"></i></a>
                     <a href="" title="Go to Website"><i className="bx bx-link"></i></a>
                   </div>
                 </div>
